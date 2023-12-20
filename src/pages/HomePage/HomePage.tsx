@@ -13,16 +13,18 @@ const HomePage = () => {
 
     return (
         <div id="top" className="pb-24 scroll-mt-24">
-            <header className="py-20 mx-auto flex flex-row items-center max-w-5xl">
-                <div className="w-1/2 flex flex-row justify-center">
+            <header className="py-20 mx-auto flex flex-col md:flex-row items-center max-w-5xl">
+                <div className="md:w-1/2 flex flex-row justify-center">
                     <img
                         src={stevenPic}
                         alt="Steven Garcia"
                         className="border-y-[1px] border-gray-200 rounded-full max-h-64"
                     />
                 </div>
-                <div className="w-1/2">
-                    <h1 className="font-bold text-5xl mb-2">Steven Garcia</h1>
+                <div className="md:w-1/2 px-2">
+                    <h1 className="text-center mt-2 md:mt-0 md:text-left font-bold text-5xl mb-2">
+                        Steven Garcia
+                    </h1>
                     <p className="text-lg mb-5">
                         I'm a Full-Stack Software Engineer. Lately, I've been
                         working on{" "}
@@ -66,7 +68,7 @@ const HomePage = () => {
                 <h2 className="text-center font-bold text-4xl mb-2">
                     Travel Destination Goals
                 </h2>
-                <div className="max-w-7xl mx-auto grid grid-cols-2 gap-5">
+                <div className="max-w-7xl mx-auto grid grid-cols-2 gap-5 px-2">
                     <TravelDestination
                         title="Austin, Texas"
                         imgSrc={austinTexas}
